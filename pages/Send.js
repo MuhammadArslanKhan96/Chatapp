@@ -1,6 +1,6 @@
 import React from 'react'
 import Side from './Side'
-import Header from './header'
+import Header from './Header'
 import Search from './Search'
 
 const Send = () => {

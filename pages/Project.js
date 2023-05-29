@@ -1,6 +1,6 @@
 import React from 'react'
 import Search from './Search'
-import Header from './header'
+import Header from './Header'
 import Side from './Side'
 import { MdEdit } from "react-icons/md";
 import Image from "next/image";

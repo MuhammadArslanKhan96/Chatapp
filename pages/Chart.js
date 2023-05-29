@@ -1,9 +1,9 @@
 import React from 'react'
 import Search from './Search'
-import Header from './header'
 import Side from './Side'
 import { MdEdit } from "react-icons/md";
 import Image from "next/image";
+import Header from './Header'
 
 const Chart = () => {
     return (

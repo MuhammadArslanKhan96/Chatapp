@@ -2,7 +2,7 @@ import React from 'react'
 import Side from './Side'
 import Image from "next/image";
 import { BsSend } from "react-icons/bs";
-import Header from './header';
+import Header from './Header';
 import Search from './Search';
 
 
