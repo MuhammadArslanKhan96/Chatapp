@@ -15,7 +15,7 @@ const Side = () => {
                 <div className="flex justify-center pt-[40px]">
                     <div className="flex justify-start   gap-x-3 pl-[18px] pr-[108px] items-center py-[20px] bg-[#EBEEF2] rounded-[10px]">
                         <div className='text-[#625BF7]'><GoPlus /></div>
-                        <Link href="/send" className="text-[16px] text-[#625BF7] font-bold">New Chat</Link>
+                        <Link href="send" className="text-[16px] text-[#625BF7] font-bold">New Chat</Link>
                     </div>
                 </div>
                 <div className='flex justify-center flex-col gap-y-4 px-[20px]'>
@@ -29,8 +29,8 @@ const Side = () => {
                             <div>   <Image src="/newsetting.svg" width={20} height={20} alt='' /> </div>
                         </div>
                         <div className=' flex flex-col gap-y-[29px]'>
-                            <Link href="/cards" className='text-[#625BF7] text-[16px] font-bold'>Pricing Plans</Link>
-                            <Link href="/signup" className='text-[#625BF7] text-[16px] font-bold'>Setting</Link>
+                            <Link href="cards" className='text-[#625BF7] text-[16px] font-bold'>Pricing Plans</Link>
+                            <Link href="signup" className='text-[#625BF7] text-[16px] font-bold'>Setting</Link>
 
                         </div>
                     </div>

@@ -5,7 +5,7 @@ import { BsSend } from "react-icons/bs";
 import Header from './Header';
 import Search from './Search';
 
-const cards = () => {
+const Cards = () => {
     return (
         <>
             <div className='flex bg-[#BBBEC740]'>
@@ -89,4 +89,4 @@ const cards = () => {
         </>
     )
 }
-export default cards
+export default Cards
