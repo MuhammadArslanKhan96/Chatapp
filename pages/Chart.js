@@ -5,7 +5,7 @@ import { MdEdit } from "react-icons/md";
 import Image from "next/image";
 import Header from './Header'
 
-const Chart = () => {
+const chart = () => {
     return (
         <>
             <div className='flex '>
@@ -107,4 +107,4 @@ const Chart = () => {
     )
 }
 
-export default Chart
+export default chart
