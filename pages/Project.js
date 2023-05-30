@@ -15,18 +15,55 @@ const Project = () => {
                     <Header />
 
                     <div className='flex flex-col justify-between '>
-                        <div className='flex justify-between px-[40px] py-[20px]'>
+                        <div className='flex justify-between px-[90px] py-[20px]'>
                             <div className='flex items-center gap-x-3'>
                                 <div className='text-[#625BF7] font-bold'>Project Name</div>
                                 <div className='text-[#625BF7]'><MdEdit /></div>
                             </div>
-                            <select className='flex  rounded-full font-bold  items-center py-[6px] border-none outline-none text-[#000000] text-[13px] '>
-
-                                <option className=' mt-[20px]'> Trello</option>
-                                <option> Last 30 days</option>
-                                <option> Last 1 Year</option>
-                                <option> Time period: All time</option>
-                            </select>
+                            <div className="relative " data-te-dropdown-ref>
+                                <button
+                                    className="flex items-center whitespace-nowrap rounded bg-transparent px-6 pb-2 pt-2.5 text-[16px] font-bold  leading-normal text-black  "
+                                    type="button"
+                                    id="dropdownMenuButton1"
+                                    data-te-dropdown-toggle-ref
+                                    aria-expanded="false"
+                                    data-te-ripple-init
+                                    data-te-ripple-color="light">
+                                    Trello
+                                    <span className="ml-4 w-2">
+                                        <Image src="/arrow.svg" width={9} height={6} alt='' />
+                                    </span>
+                                </button>
+                                <ul
+                                    className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                                    aria-labelledby="dropdownMenuButton1"
+                                    data-te-dropdown-menu-ref>
+                                    <li>
+                                        <a
+                                            className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                            href="#"
+                                            data-te-dropdown-item-ref
+                                        >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                            href="#"
+                                            data-te-dropdown-item-ref
+                                        >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+                                            href="#"
+                                            data-te-dropdown-item-ref
+                                        >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
 
                         </div>
                         <div className='flex justify-center gap-x-7'>

@@ -1,65 +1,52 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
+import Header from './Header'
+import Search from './Search'
+import Side from './Side'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-     
+    <div className='flex'>
+    <Side />
+    <div className='w-[80%] flex flex-col'>
+        <Header />
+        <div className='flex flex-col justify-center gap-y-[30px] h-[75vh] items-center'>
+            <div className='flex items-center gap-x-[23px]'>
+                <Image src="/fxemoji_moyai.svg" width={50} height={50} alt='' />
+                <div className='text-[16px] font-bold align-middle text-black'>
+                    What do you want me to do?</div>
+            </div>
+            <div className='flex justify-center items-center'>
+               <Link href="/chart">
+                <div className='flex flex-col gap-y-[16px] rounded-[20px] shadow-[0px_18px_32px_rgba(208,210,218,0.15)] bg-[#FFFFFF] w-[361px] text-center px-[20px] py-[20px]'>
+                    <div className='flex justify-center'>
+                        <Image src="/icon-park-outline_mindmap-list.svg" width={50} height={50} alt='' />
+                    </div>
+                    <div className='text-[16px] font-Roboto text-black font-bold '>MindMap</div>
+                    <div className='text-[16px] font-Roboto text-black text-center font-light'>Morem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nunc vulputate libero et </div>
+                </div>
+                </Link>
+                <div className='flex justify-center align-middle px-[40px] text-[24px] font-bold text-black'>OR</div>
+               <Link href="/project">
+                <div className='flex flex-col gap-y-[16px] rounded-[20px] shadow-[0px_18px_32px_rgba(208,210,218,0.15)] bg-[#FFFFFF] w-[361px] text-center px-[20px] py-[20px]'>
+                    <div className='flex justify-center'>
+                        <Image src="/trail.png" width={50} height={50} alt='' />
+                    </div>
+                    <div className='text-[16px] font-Roboto text-black font-bold '>Trello</div>
+                    <div className='text-[16px] font-Roboto text-black text-center font-light'>Morem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nunc vulputate libero et </div>
+                </div>
+                </Link>
+            </div>
+        </div>
+        <Search />
+    </div>
 
-     
 
-      <div className="mb-32 text-black gap-x-10 gap-y-10 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-       
-          <Link href="/Signup" className={`mb-3 cursor-pointer text-2xl font-semibold`}
-           >
-            Sign up{' '}
-           
-          </Link>
-        
-        
-
-      
-          <Link href="" className={`mb-3 text-2xl font-semibold`}>
-            Sign in{' '}
-           
-          </Link>
-        
-
-     
-          <Link href="/Mindmap" className={`mb-3 text-2xl font-semibold cursor-pointer`}
-           >
-            mind map{' '}
-           
-          </Link>
-       
-          <Link href="/Cards" className={`mb-3 text-2xl font-semibold`}
-          >
-           
-            card page{' '}
-           
-          </Link>
-          <Link href="/Send" className={`mb-3 text-2xl font-semibold cursor-pointer`}
-          >
-            send message{' '}
-           
-          </Link>
-          <Link href="/Chart" className={`mb-3 text-2xl font-semibold`}
-          >
-            chart{' '}
-           
-          </Link>
-          <Link href="/Project" className={`mb-3 text-2xl font-semibold cursor-pointer`}
-           >
-            project name{' '}
-           
-          </Link>
-        
-      </div>
-    </main>
+</div>
   )
 }
