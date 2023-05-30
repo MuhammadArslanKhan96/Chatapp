@@ -1,11 +1,10 @@
-import React from 'react'
-import Search from './Search'
-import Side from './Side'
-import { MdEdit } from "react-icons/md";
 import Image from "next/image";
-import Header from './Header'
+import React from 'react';
+import Header from './Header';
+import Search from './Search';
+import Side from './Side';
 
-const chart = () => {
+const Chart = () => {
     return (
         <>
             <div className='flex '>
@@ -107,4 +106,4 @@ const chart = () => {
     )
 }
 
-export default chart
+export default Chart

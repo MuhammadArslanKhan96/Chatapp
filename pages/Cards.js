@@ -1,9 +1,7 @@
-import React from 'react'
-import Side from './Side'
-import Image from "next/image";
-import { BsSend } from "react-icons/bs";
+import React from 'react';
 import Header from './Header';
 import Search from './Search';
+import Side from './Side';
 
 const Cards = () => {
     return (

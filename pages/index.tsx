@@ -20,7 +20,7 @@ export default function Home() {
                     What do you want me to do?</div>
             </div>
             <div className='flex justify-center items-center'>
-               <Link href="chart">
+               <Link href="/chart">
                 <div className='flex flex-col gap-y-[16px] rounded-[20px] shadow-[0px_18px_32px_rgba(208,210,218,0.15)] bg-[#FFFFFF] w-[361px] text-center px-[20px] py-[20px]'>
                     <div className='flex justify-center'>
                         <Image src="/icon-park-outline_mindmap-list.svg" width={50} height={50} alt='' />
@@ -31,7 +31,7 @@ export default function Home() {
                 </div>
                 </Link>
                 <div className='flex justify-center align-middle px-[40px] text-[24px] font-bold text-black'>OR</div>
-               <Link href="project">
+               <Link href="/project">
                 <div className='flex flex-col gap-y-[16px] rounded-[20px] shadow-[0px_18px_32px_rgba(208,210,218,0.15)] bg-[#FFFFFF] w-[361px] text-center px-[20px] py-[20px]'>
                     <div className='flex justify-center'>
                         <Image src="/trail.png" width={50} height={50} alt='' />
